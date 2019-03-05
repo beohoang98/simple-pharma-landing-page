@@ -5,6 +5,8 @@
   .showcase-img {
     min-height: 30rem;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   @media (min-width: 768px) {
     .showcase-text {

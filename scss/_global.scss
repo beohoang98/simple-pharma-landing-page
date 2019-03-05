@@ -1,5 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @include body-font;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 h1,

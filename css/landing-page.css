@@ -4,8 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -29,12 +35,12 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color: #000;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 header.masthead h1 {
@@ -58,6 +64,8 @@ header.masthead h1 {
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -105,20 +113,18 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/nhathuoc.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 }
 
 .call-to-action .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color: #000;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 footer.footer {
@@ -128,6 +134,7 @@ footer.footer {
 
 .logo {
   color: #28a745;
+  font-weight: bold;
 }
 
 .logo .logo-tail {
@@ -135,4 +142,9 @@ footer.footer {
   border-radius: 4px;
   background-color: #28a745;
   color: #fff;
+  font-weight: normal;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid green;
 }

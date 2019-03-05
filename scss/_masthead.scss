@@ -7,12 +7,12 @@ header.masthead {
   padding-bottom: 4rem;
   .overlay {
     position: absolute;
-    background-color: $gray-900;
+    background-color: #000;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.5;
   }
   h1 {
     font-size: 2rem;

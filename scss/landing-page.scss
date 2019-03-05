@@ -11,3 +11,7 @@
 @import "call-to-action.scss";
 @import "footer.scss";
 @import "logo.scss";
+
+.nav-link.active {
+    border-bottom: 2px solid green;
+}

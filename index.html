@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>Simple Pharma</title>
-  <link href="./img/pharma.ico" rel="icon" type="image/x-icon" />
+  <link href="/favicon.ico" type="image/x-icon" />
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,10 +24,10 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#menu">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-0 shadow">
     <div class="container">
       <a class="navbar-brand" href="#">
         <span class="logo">Simple <span class="logo-tail">Pharma</span></span>
@@ -41,7 +41,7 @@
           <li class="nav-item"><a href="#top" class="nav-link">Tổng quan</a></li>
           <li class="nav-item"><a href="#feature" class="nav-link">Lợi ích</a></li>
           <li class="nav-item"><a href="#about-us" class="nav-link">Đội ngũ phát triển</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Đăng ký</a></li>
         </ul>
       </div>
 
@@ -53,12 +53,13 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-6"></div>
         <div class="col-xl-6">
           <h2>Phần mềm quản lý bán hàng cho Nhà Thuốc</h2>
-          <p>Quản lý hàng ngàn mã sản phẩm. Nắm bắt tồn kho, bổ sung hàng hóa kịp thời. Theo dõi chính xác công nợ, nhà cung cấp, lịch sử mua của khách hàng. Rút ngắn thời gian giao dịch tại quầy.</p>
-          <button type="submit" class="btn btn-lg btn-primary">Đăng ký</button>
+          <p>Quản lý hàng ngàn mã sản phẩm. Nắm bắt tồn kho, bổ sung hàng hóa kịp thời. Theo dõi chính xác công nợ, nhà
+            cung cấp, lịch sử mua của khách hàng. Rút ngắn thời gian giao dịch tại quầy.</p>
+          <a href="#contact" class="btn btn-lg btn-success">Đăng ký dùng thử</a>
         </div>
+        <div class="col-xl-6"></div>
       </div>
     </div>
   </header>
@@ -67,13 +68,13 @@
   <section id="feature" class="features-icons bg-light text-center">
     <div class="container">
       <div class="mb-4">
-          <h1>Lợi ích</h1>
+        <h1>Lợi ích</h1>
       </div>
       <div class="row">
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
+              <i class="icon-chart m-auto text-primary"></i>
             </div>
             <h3>BIỂU ĐỒ DOANH THU</h3>
             <p class="lead mb-0">Giúp bạn nắm bắt được doanh thu, biểu đồ thống kê.</p>
@@ -82,7 +83,7 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-primary"></i>
+              <i class="icon-organization m-auto text-primary"></i>
             </div>
             <h3>QUẢN LÝ KHO THUỐC</h3>
             <p class="lead mb-0">Giúp bạn dễ dàng kiểm tra số lượng thuốc trong kho để biết nhập xuất thuốc men.</p>
@@ -91,10 +92,11 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
+              <i class="icon-clock m-auto text-primary"></i>
             </div>
             <h3>THỜI GIAN LÀM VIỆC</h3>
-            <p class="lead mb-0">Quản lý toàn bộ quá trình nhập hàng, bán hàng, làm giá bán trên điện thoại di động, ngay cả khi bạn không có mặt tại nhà thuốc.</p>
+            <p class="lead mb-0">Quản lý toàn bộ quá trình nhập hàng, bán hàng, làm giá bán trên điện thoại di động,
+              ngay cả khi bạn không có mặt tại nhà thuốc.</p>
           </div>
         </div>
       </div>
@@ -107,29 +109,29 @@
       <div class="row no-gutters">
 
         <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background-image: url('img/bg-showcase-1.jpg');"></div>
+          style="background-image: url('img/admin-dashboard.png')"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great
-            on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          <h2>Giao diện dễ nhìn, thoải mái</h2>
+          <p class="lead small">Mệt mỏi với những ô tính của Excel?</p>
+          <p class="lead small">Ngán ngẫm việc quản lý thu/chi bằng sổ sách?</p>
+          <p class="lead">SimplePharma giúp bạn ghi lại cái giao dịch một cách tiện dụng và thống kê một cách đơn giản
+          </p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/cloud-network.png');"></div>
         <div class="col-lg-6 my-auto showcase-text">
-          <h2>Updated For Bootstrap 4</h2>
-          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in
-            mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          <h2>TRUY CẬP MỌI NƠI</h2>
+          <p class="lead mb-0">Không nhất thiết phải có mặt ở nhà thuốc, bạn vẫn có thể quản lý bán thuốc ở nhà hoặc
+            công ty</p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background-image: url('img/bg-showcase-3.jpg');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/admin.jpeg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
-            customization options. Out of the box, just add your content and images, and your new landing page will be
-            ready to go!</p>
+          <h2>THEO DÕI VÀ GHI NHỚ HOẠT ĐỘNG</h2>
+          <p class="lead mb-0">Các hoạt động sẽ được ghi lại như bán - nhập - xuất kho và nhân viên đã thao tác, trên
+            các thiết bị khác nhau, giúp việc quản lý của bạn dễ dàng hơn</p>
         </div>
       </div>
     </div>
@@ -168,10 +170,13 @@
   <!-- Call to Action -->
   <section id="contact" class="call-to-action text-white text-center">
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+          <img src="/favicon.png" width="100px" alt="">
+        </div>
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Đăng ký dùng thử miễn phí</h2>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
@@ -180,7 +185,7 @@
                 <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                <button type="submit" class="btn btn-block btn-lg btn-success">Đăng ký</button>
               </div>
             </div>
           </form>
